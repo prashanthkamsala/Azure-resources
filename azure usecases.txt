@@ -1,0 +1,74 @@
+                           AZURE REALTIME PROJECTS or USECASES
+
+Vitual Machines:
+
+> My client, Nokia needs a windows Vm for Data storage. so launch a vm with 3 additional disk.
+  Disk capacities should be 10gb, 7gb & 5gb. Duplicate the data of 5gb disk into 8gb disk of second 
+  vm. In that vm, enable remote and web service from anywhere. Also make the second server can reach 
+  any destinantion point.
+
+> My client needs a webserver with separate disk for os & data storage. webpage sources should be stored
+  under the data disk. webserver should be accessed by a static public ip. also they needa a backup for   
+  this webserver and ensure at any situation they can switch thier webserver to any location.
+
+AZURE IAM:
+
+> My client, swiggy wants to administrate thier technical engineers as follows. They have team such as
+  developers, database eng., linux admins and system admins. All the teams should be in two levels like
+  L1 & L2.
+
+> During Cab call we confirmed with SDM manager, thier requirement is to have a "Team leaders" group to 
+  manage all the teams. Ensure only Team Leaders group can do this user management.
+
+> My client need common file repo, everyone can access that file repository.
+
+STORAGE ACCOUNT:
+
+> My Client, needs two common storage places to store Files & Folders. One container it can access by Public
+  end-users, & storage admins. Another common storage place should accessible privately by the azure vms only.
+  Both the containers should control by policies to grant access. one container should not overwrite any file  
+  at any time and container.
+
+VNETS:
+
+> My client, TVs wants to launch thier websites publicly along with its database servers at the backend. Establish n/w
+  connectivity b/w webservers and database servers. 
+NOTE: No need of public access for database servers ensure only website can access from public network.
+
+> My client wants to 2 different n/w in 2 different regions. In 1 n/w, both sub n/ws should have internet access but, in 
+  another n/ws, one sub networks should have internet access other sub n/ws should not have internet access.
+  Establish n/w connectivity b/w 2 diff n/ws.
+
+> My client need a n/w, in that n/w they are going to host only database servers, so they dont want expose those servers
+  in public network directly. Also they want to reduce the usage of public IPs. Give solutions to implement the n/w with
+  obove requirement.
+
+LOAD BALANCER:
+
+> My client needs a web service should run with high availability and access publicly with below requirements,
+ (public LB)
+  > 1 VNET with 2 subnets.
+  > VMs configured with apache website.
+  > HTTP port should be opened.
+  > Health check TCP 80.
+
+> My client requirement is run webservice with high availability, and client should not access website publicly (private LB).
+
+VM SCALE SET:
+
+> My client wants to webservice with automatic redundancy, if cpu utilization increase above 80%, it should increase by 2 servers, if CPU
+  utilization decrease below 80%,it should decrease by 2 servers, the servers are scale out and scale in automatically. During scale out and 
+  scale In, Monitoring team should get alerts via Email notification.
+
+DNS:
+
+> In my client environment more than 100 servers are from same VNet. They wanted to have same DNS IP for all server. Majorly client they have 
+  centralized DNS private zone where they have all of thier records. whatever the record they have it in the private zone it should be resolved
+  by the all the servers whoever there in this vnet.
+
+DATABASE:
+
+> In my client envrionment many developers are there, they need DB servers are from same Vnet of webservers. They wanted to have postgres DB for
+  the webservers. Majorly client they have centralized DB where they have all of thier data. whatever the data they have it will be in the DB
+  it should be accessbile by all the webservers whatever in that VNET.
+
