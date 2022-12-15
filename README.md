@@ -9,6 +9,6 @@ In addition, Azure offers a range of security features to protect users' data an
 
 Overall, Microsoft Azure is a powerful and versatile cloud computing platform that offers a wide range of services and tools to help users build, deploy, and manage applications and services in the cloud.
 
-And am providing some useful resources like certification practice question, Azure cloud and DevOps interview prepartation question.
+And am providing some useful resources like certification practice questions, Azure cloud and DevOps interview prepartation questions.
 
 Here you are going to learn in a Realtime.
